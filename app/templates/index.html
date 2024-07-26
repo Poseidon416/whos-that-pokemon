@@ -3,17 +3,17 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Who's that Pokémon?</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     </head>
     <body>
         <header>
-            <img src="header.png" id="header-img">
+            <img src="{{ url_for('static', filename='header.png') }}" id="header-img">
         </header>
         <main>
             <div id="drop-area">
                 <input type="file" accept="image/*" id="input-img" style="display: none;">
                 <button type="button" id="img-view">
-                    <img src="icon.png">
+                    <img src="{{ url_for('static', filename='icon.png') }}">
                     <p><b>drag and drop or click here <br> to upload image</b></p>
                     <span>supported formats: jpeg, png, webp</span>
                 </button>
@@ -21,6 +21,6 @@
                 <button id="analyze" class="button" type="button">ANALYZE</button>
             </div>
         </main>
-        <script src="script.js"></script>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>
 </html>
