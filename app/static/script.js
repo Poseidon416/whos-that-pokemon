@@ -34,6 +34,7 @@ imgSelect.addEventListener("drop", drop, false);
 function dragenter(e) {
     e.stopPropagation();
     e.preventDefault();
+
 }
   
 function dragover(e) {
@@ -45,6 +46,7 @@ function dragover(e) {
 function drop(e) {
     e.stopPropagation();
     e.preventDefault();
+    input.value = "";
     input.files = e.dataTransfer.files;
     uploadImage();
 }
@@ -52,7 +54,7 @@ function drop(e) {
 clear.addEventListener(
     "click", 
     function () {
-        input.value = null;
+        input.value = "";
         imgSelect.style.backgroundImage = "none";
         imgSelect.style.border = "2px dashed #aaa";
 

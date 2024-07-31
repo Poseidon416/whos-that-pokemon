@@ -18,8 +18,10 @@
                     <span>supported formats: jpeg, png, webp</span>
                 </button>
                 <button id="clear" class="button" type="button">CLEAR</button>
-                <button id="analyze" class="button" type="button">ANALYZE</button>
+                <a href="/analyze"><button id="analyze" class="button" type="button">ANALYZE</button></a>
             </div>
+            {% block pokedex %}
+            {% endblock pokedex %}
         </main>
         <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>
