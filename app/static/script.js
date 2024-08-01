@@ -1,6 +1,8 @@
 const imgSelect = document.getElementById("img-view");
 const input = document.getElementById("input-img");
+const submit = document.getElementById("submit-img")
 const clear = document.getElementById("clear");
+const analyze = document.getElementById("analyze")
 
 imgSelect.addEventListener(
   "click",
@@ -53,7 +55,7 @@ function drop(e) {
 
 clear.addEventListener(
     "click", 
-    function () {
+    () => {
         input.value = "";
         imgSelect.style.backgroundImage = "none";
         imgSelect.style.border = "2px dashed #aaa";
@@ -61,6 +63,16 @@ clear.addEventListener(
         let children = imgSelect.children;
         for(let i = 0; i < children.length; i++) {
             children[i].style.visibility = "visible";
+        }
+    },
+    false
+);
+
+analyze.addEventListener(
+    "click",
+    () => {
+        if (submit) {
+            submit.click();
         }
     },
     false
