@@ -3,7 +3,7 @@
 2,Ivysaur,Seed Pokémon,1,13,Grass,Poison,Overgrow,,Chlorophyll,60,62,63,80,80,60,405
 3,Venusaur,Seed Pokémon,2,100,Grass,Poison,Overgrow,,Chlorophyll,80,82,83,100,100,80,525
 4,Charmander,Lizard Pokémon,0.6,8.5,Fire,,Blaze,,Solar Power,39,52,43,60,50,65,309
-5,Charmeleon,Flame Pokémon,,19,Fire,,Blaze,,Solar Power,58,64,58,80,65,80,405
+5,Charmeleon,Flame Pokémon,1.1,19,Fire,,Blaze,,Solar Power,58,64,58,80,65,80,405
 6,Charizard,Flame Pokémon,1.7,90.5,Fire,Flying,Blaze,,Solar Power,78,84,78,109,85,100,534
 7,Squirtle,Tiny Turtle Pokémon,0.5,9,Water,,Torrent,,Rain Dish,44,48,65,50,64,43,314
 8,Wartortle,Turtle Pokémon,1,22.5,Water,,Torrent,,Rain Dish,59,63,80,65,80,58,405
