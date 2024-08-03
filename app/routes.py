@@ -1,6 +1,8 @@
 import os
 from flask import render_template, request, redirect, url_for, abort
 from werkzeug.utils import secure_filename
+from main import *
+
 from app import app
 
 @app.route('/')
@@ -16,4 +18,5 @@ def upload_file():
         if filename not in app.config['UPLOAD_EXTENSIONS']:
             abort(400)
         uploaded_file.save(uploaded_file.filename)
-    return ('', 204)
+    return ('', 204) #Status 204: No Content
+
