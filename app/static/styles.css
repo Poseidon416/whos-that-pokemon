@@ -47,8 +47,9 @@ main {
     border: 2px dashed #aaa;
     background-color: #2a2a2a;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-image: none;
 }
 
 #img-view img {
@@ -67,7 +68,7 @@ main {
 }
 
 #img-view:hover { background-color: #3a3a3a; }
-
+    
 .button {
     width: 100px;
     height: 20px;
