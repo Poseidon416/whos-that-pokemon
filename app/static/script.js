@@ -4,7 +4,7 @@ const submit = document.getElementById("submit-img")
 const clear = document.getElementById("clear");
 const analyze = document.getElementById("analyze")
 
-var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.webp)$/i;
+const allowedExtensions = /(\.jpg|\.jpeg|\.png|\.webp)$/i;
 
 imgView.addEventListener(
   "click",
